@@ -1,0 +1,7 @@
+/node_modules
+.cache
+dist
+build
+*.log
+coverage
+.size-snapshot.json

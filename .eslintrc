@@ -1,0 +1,59 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier", "react-hooks"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-console": "error",
+    "curly": "error",
+    "no-unused-vars": "error",
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "const",
+          "let",
+          "var",
+          "function",
+          "class",
+          "try",
+          "throw",
+          "if",
+          "for",
+          "do",
+          "while",
+          "switch",
+          "return"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var",
+          "function",
+          "class",
+          "try",
+          "throw",
+          "if",
+          "for",
+          "do",
+          "while",
+          "switch",
+          "return"
+        ],
+        "next": "*"
+      },
+      { "blankLine": "any", "prev": ["case"], "next": ["case", "default"] },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var", "export", "import"],
+        "next": ["const", "let", "var", "export", "import"]
+      }
+    ]
+  }
+}

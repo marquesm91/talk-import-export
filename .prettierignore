@@ -1,0 +1,7 @@
+/build
+/node_modules
+/public
+*.min.js
+.cache
+dist
+*.yml

@@ -1,0 +1,53 @@
+{
+  "name": "import-export",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./build",
+    "build": "rollup -c ./rollup.config.js",
+    "lint": "eslint src --fix",
+    "lint:check": "eslint src",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run lint:check && npm run prettier -- --list-different"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/plugin-transform-react-constant-elements": "^7.6.3",
+    "@babel/plugin-transform-react-inline-elements": "^7.2.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-react-remove-properties": "^0.3.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "eslint": "^6.5.1",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "glob": "^7.1.5",
+    "prettier": "^1.18.2",
+    "rollup": "^1.25.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-size-snapshot": "^0.10.0"
+  },
+  "dependencies": {
+    "core-js": "^3.3.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
